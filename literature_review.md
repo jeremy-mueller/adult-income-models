@@ -1,3 +1,3 @@
-education-num, age, hours-per-week, captial-gain and captial-loss, marital status, and occupation are all features generally kept. They are important features to create a model with. 
-final-weight and native-country are generally dropped. These don't serve much purpose to creating a predictive model. Education is also dropped because we kept education-num and there is no need for both. 
+The features generally kept are education-num, age, hours-per-week, captial-gain and captial-loss, marital status. They are important features to create a model with. 
+fnlwgt and native-country are generally dropped for simplicity of analysis. Education is also dropped because we kept education-num and there is no need for both. Relationship was also recommended to be dropped because the role in the family can be assessed from gender and marital status. 
 A few issues that arise are the missing values in certain features and inconsistent scales. To deal with those, one person suggested dropping the rows because it didn't drop the number of rows drastically with how many are in the dataset. The other option is to input values likely using a mean, which they also suggested using. 
