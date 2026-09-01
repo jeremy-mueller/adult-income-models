@@ -4,22 +4,19 @@
 
 We'll be using the UCI Adult dataset where we will predict whether an individual's income is above or at/below $50K.
 
-\##
-
-* Jeremy Mueller
+## Team
+* **Jeremy Mueller**
 * **Parker Krcmar**
 
-https://archive.ics.uci.edu/dataset/2/adult
+[UCI Adult dataset](https://archive.ics.uci.edu/dataset/2/adult)
 
+*I'm looking forward to getting more comfortable with Git and working in a team.*
 *Nervous about using GitHub and Git for the first time ever.*
 
-| File			| What it is 			|
-
-|-----------------------|-------------------------------|
-
-| README.md		| Project overview + team	|
-
-| executive\_summary.md  | Nontechnical summary		|
-
-
-
+|File|What it is|
+|---|---|
+|README.md|Project overview + team|
+|executive_summary.md|Nontechnical summary|
+|ai_use_log.md|Summary of AI use in project|
+|literature_review.md|Research prior work using this dataset|
+|data/adult.csv|UCI Adult dataset|
