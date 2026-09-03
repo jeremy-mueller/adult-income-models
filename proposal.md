@@ -6,6 +6,7 @@ A single observation in our dataset represents an individual.
 For our features, we plan to use the following:
 
 * age: Pay generally scales with age
+* occupation: Some jobs pay more
 * workclass: Some classes of work pay more
 * education-num: Education typically linked with higher pay
 * marital-status: Being able to afford a family likely indicates wealth
