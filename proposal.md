@@ -29,4 +29,4 @@ Our advanced model will be a simple multi-layer perceptron model created and tra
 Evaluation will be done using accuracy as it is simple to understand and commonly mentioned during our literature review for our dataset.
 
 ## Leakage Risk
-idk
+We don't see any possible leakage within the features in the dataset, so this is not something that we are worried about.
