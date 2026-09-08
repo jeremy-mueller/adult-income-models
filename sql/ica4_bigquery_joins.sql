@@ -27,7 +27,7 @@ ORDER BY revenue DESC;
 -- Part B3
 SELECT
   p.category,
-  ROUND(SUM(oi.sale_price * o.num_of_item), 2) AS revenue
+  ROUND(SUM(oi.sale_price), 2) AS revenue
 FROM `bigquery-public-data.thelook_ecommerce.order_items` AS oi
 JOIN `bigquery-public-data.thelook_ecommerce.products` AS p
   ON oi.product_id = p.id
