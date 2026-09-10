@@ -17,7 +17,7 @@ For our features, we plan to use the following:
 We currently plan on just removing rows that have values missing from the above features as it won't result in too much of a data loss.
 
 ## Train/val/test Split
-We will do a traditional 70/15/15 split for our training, validation, and test datasets. Models will be trained on the training set, validated during training on the validation set, and then evaluated at the end on the test set.
+We will do a traditional 70/30 split for our training and test datasets. Models will be trained on the training set and then evaluated at the end on the test set.
 
 ## Baseline Model
 For our baseline model we will do a plain logistic regression created using the LogisticRegression class in the scikit-learn Python library.
