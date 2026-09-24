@@ -15,7 +15,7 @@
 | Precision | 72.7% |
 | Recall | 59.3% |
 | F1-Score | 0.653 |
-| ROC-AUC | 0.891 |
+| ROC-AUC | 0.898 |
 
 ---
 
