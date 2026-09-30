@@ -16,6 +16,8 @@ We'll be using the UCI Adult dataset where we will predict whether an individual
 |File|What it is|
 |---|---|
 |README.md|Project overview + team|
+|notebook.ipynb|Data cleaning, model creation, metric results|
+|explainability.ipynb|Global and local explainability examples|
 |proposal.md|Problem framing, features, and decisions|
 |executive_summary.md|Nontechnical summary|
 |ai_use_log.md|Summary of AI use in project|
