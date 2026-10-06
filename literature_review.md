@@ -9,14 +9,13 @@ Other features are dropped to simplify the analysis and reduce noise:
 * `education`: Dropped because `education-num` already represents the exact same educational attainment in a numerical format.
 * `relationship`, `sex`, and `race`: Dropped to streamline demographic variables and avoid redundancy, relying on `marital-status` alongside job-related categories (`workclass` and `occupation`) to capture household income dynamics.
 
-## Missing Values and Preprocessing
+## Missing Values
 
 The dataset has two main data quality issues: missing values (marked as `?`) and variables with very different scales. Previous projects handle these using two main approaches:
 
 * **Dropping rows:** Since missing values only affect a small percentage of total records in categorical features like `workclass` and `occupation`, removing those rows is a common choice that preserves plenty of clean data without introducing synthetic bias.
 * **Imputation:** Alternative setups fill in missing values using the mean or mode to avoid throwing away any rows.
 
-Finally, categorical variables (`workclass`, `marital-status`, and `occupation`) are one-hot encoded, and continuous features are standardly scaled so high-magnitude numbers (like `capital-gain`) don't disproportionately distort linear models like Logistic Regression.
 
 ---
 
