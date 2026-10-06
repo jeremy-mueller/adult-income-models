@@ -1,7 +1,10 @@
 # AI Use Log
 
-This log documents the use of AI tools during the development of
-the Adult Income Prediction project.
-
-| Date | Person | AI Tool | Area | Purpose / Question | How the Output Was Used |
-|------|--------|---------|------|--------------------|-------------------------|
+| Date | AI Tool | Task | Outcome | Verification Steps & Error Caught |
+| :--- | :--- | :--- | :--- | :--- |
+| Sept 10, 2026 | Gemini | Formatting Literature Review and reference citations in Markdown | **Accepted** | **Verification:** Rendered the Markdown preview in VS Code to confirm table borders, bullet styling, and external hyperlinked sources worked correctly. |
+| Sept 10, 2026 | Gemini | Conceptualizing F1-score trade-offs for direct marketing scenario | **Accepted with modifications** | **Verification:** Cross-checked the AI's explanation of Precision vs. Recall trade-offs against our dataset's actual metrics.<br><br>**Adjustment:** Used the AI explanation to understand why high Recall alone wastes marketing budget, then rewrote the business risk logic in my own words. |
+| Sept 10, 2026 | Gemini | Formatting Metric Justification tables and section layout | **Accepted with modifications** | **Verification:** Manually recalculated the confusion matrix arithmetic (TP=2,027, FP=763, FN=1,392, TN=9,628) and confirmed the numbers matched the table output.<br><br>**Adjustment:** Cleaned up the Markdown table layout and shortened the surrounding text so the section remains easy to read. |
+| Sept 24, 2026 | Gemini | Troubleshooting Random Forest code | **Accepted with modifications** | **Verification:** Executed script in Jupyter/terminal and checked target distribution.<br><br>**Error Caught:** AI initially suggested `df['income'] == '>50K'`, which evaluated to all 0s due to leading spaces in the dataset strings. Corrected to `df['income'].str.contains('>50K')` to properly encode the binary target. |
+| Oct 2, 2026 | Gemini | Explaining `MLPClassifier` neural network setup and evaluation metrics | **Accepted with modifications** | **Verification:** Stepped through the code line-by-line in the notebook. <br><br> **Error Caught:** AI initially claimed `hidden_layer_sizes=(50,)` meant 50 hidden layers. I checked scikit-learn documentation and corrected my notes to clarify it means a single hidden layer with 50 neurons. |
+| Oct 5, 2026 | Gemini | Drafting Literature Review feature selection rationale | **Changed** | **Verification:** Cross-checked the AI draft against our team's pandas column selection code (`data[['age', 'workclass', ...]]`).<br><br>**Error Caught:** The AI draft stated `sex` was retained in the final model. Since our code explicitly dropped `sex` and `race`, I changed that draft by moving them from the retained variables section to the dropped variables section. |
