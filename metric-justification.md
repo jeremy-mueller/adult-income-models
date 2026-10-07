@@ -33,11 +33,11 @@ The confusion matrix from our model exposes the limitation of accuracy. It misse
 We evaluate this model under a targeted **Wealth Management Direct Marketing** scenario. The business objective is to identify potential high earners (>50k) to receive premium financial service offers. 
 
 ### Error Cost Analysis
-- False Positive (FP = 763): Misclassifying a low earner as high-income results in a wasted ad impression or brochure. Regardless, it's a low, fixed operational cost.
+- False Positive (FP = 763): Misclassifying a low earner as high-income results in a wasted digital ad impression, automated email, or brochure. Regardless, it's a low, fixed operational cost.
 - False Negative (FN = 1,392): Failing to identify an actual high earner results in a lost customer opportunity. This loses significant long-term revenue, so this is a high risk outcome we want to avoid. 
 
-### Primary Metric Selection: F1 (0.653)
-We select **F1** as our primary evaluation metric. 
+### Primary Metric Selection: Recall
+We select **Recall** as our primary evaluation metric. 
 
-- **Why not pure Recall?** Evaluating on pure Recall would reward a model that predicts >50k for every customer. Doing so would destroy the marketing budget by sending promotions to all 13,810 individuals. 
-- **Why F1 works:** F1 works better because it is the harmonic mean of Precision and Recall. It forces the model to capture high earners, while holding a reasonable budget. 
+- **What Recall Measures**: Recall tracks the percentage of actual high earners (>50k) the model successfully captures out of all the high earners in the dataset.
+- **Why Recall works best**: It directly aligns with our error costs by prioritizing the prevention of missed clients (False Negatives), while accepting a few extra low-cost ad impressions as a worthwhile trade-off. It is better than F1 because F1 treats Precision and Recall as equally important. Avoiding low cost spend (Precision) matters far less to us than capturing high-value clients, so weighing them the same does not make sense here. 
