@@ -1,5 +1,7 @@
 # Adult Income Prediction Models
 
+**Presentation Slides**: https://docs.google.com/presentation/d/14f8rpsWzrZApx5qjaZRrvujaNmGLhTwvNv9SBL8kjaw/edit?usp=sharing
+
 ## Dataset
 
 We'll be using the UCI Adult dataset where we will predict whether an individual's income is above or at/below $50K.
