@@ -4,15 +4,24 @@
 
 We'll be using the UCI Adult dataset where we will predict whether an individual's income is above or at/below $50K.
 
-## Team
-* **Jeremy Mueller**
-* **Parker Krcmar**
-
 [UCI Adult dataset](https://archive.ics.uci.edu/dataset/2/adult)
 
-*I'm looking forward to getting more comfortable with Git and working in a team.*
-*Nervous about using GitHub and Git for the first time ever.*
+## Team
+* **Jeremy Mueller** - *I'm looking forward to getting more comfortable with Git and working in a team.*
+* **Parker Krcmar** - *Nervous about using GitHub and Git for the first time ever.*
 
+## Setup and Running
+This repository is done in Python using Jupyter Notebook. To install all the required packages, run:
+```
+pip install -r requirements.txt
+```
+Then, in your terminal, open Jupyter with
+```
+jupyter notebook
+```
+Open notebook.ipynb, and run each cell in sequence to train and evaluate the models.
+
+## Repository Layout
 |File|What it is|
 |---|---|
 |README.md|Project overview + team|
