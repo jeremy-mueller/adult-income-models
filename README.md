@@ -24,3 +24,5 @@ We'll be using the UCI Adult dataset where we will predict whether an individual
 |ai_use_log.md|Summary of AI use in project|
 |literature_review.md|Research prior work using this dataset|
 |data/adult.csv|UCI Adult dataset|
+| requirements.txt | Python library dependencies to reproduce environment |
+| results.md | Comparison tables of baseline vs. final model metrics across thresholds |
