@@ -9,7 +9,7 @@ Using Census data on educational and employment traits, this project evaluates p
 **Our Review Process:** We evaluated model reliability by running a leakage check on capital gains/losses, and tested fairness by seeing if adding race and sex attributes back into the model would reduce bias gaps.
 
 ## Key Findings
-**[Placeholder: Overall Model Comparison]:** *[Insert 1–2 sentences here once we have results.md]*
+**Overall Model Comparison:** The Stronger Model outperforms the Baseline across all tested decision thresholds. At our target cutoff, it increases our client capture rate (Recall) from 77.2% to 80.1%, successfully identifying more high-value prospects.
 
 **Leakage Check (Pass):** The model passed our reliability review. Removing capital gain and capital loss caused only a 1.1% drop in client capture (80.1% to 79.0%). This confirms the model relies on stable career indicators rather than temporary investment gains.
 
